@@ -323,13 +323,7 @@ header ul a:hover{
     .content{
         display: flex;
         flex-wrap: wrap-reverse;
-        gap:1rem;
         top:10rem;
-    }
-
-    .image_content{
-        width: 25rem;
-        height: 25rem;
     }
 
     .skills_content{
