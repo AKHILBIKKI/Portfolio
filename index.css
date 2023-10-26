@@ -166,7 +166,6 @@ header ul a:hover{
 
 .skills_content ul{
     display: flex;
-    flex-wrap: wrap;
     gap: 3rem;
     list-style: none;
 }
@@ -312,4 +311,38 @@ header ul a:hover{
     100%{
         transform: rotate(1turn);
     }
+}
+
+/* media starts here */
+
+@media screen and (max-width:1000px ) {
+
+    .home-container{
+        overflow: visible;
+    }
+    .content{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        gap:1rem;
+        top:10rem;
+    }
+
+    .image_content{
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .skills_content{
+        position: relative;
+    }
+
+    .content_container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skills_content ul{
+        gap: 1rem;
+    }
+    
 }
