@@ -53,8 +53,10 @@ header ul a:hover{
 
 /* Main starts Here */
 
+/*home conatiner*/
+
 .home-container{
-    background-color: #f9f9f9;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -108,6 +110,27 @@ header ul a:hover{
     line-height: 1.6;
 }
 
+.text_content a{
+    width: fit-content;
+    height: fit-content;
+}
+
+.resumeDownload{
+    height: 4rem;
+    margin-top: 2rem;
+    width: 15rem;
+    border-radius: 20%;
+    color: #3a3a3a;
+    background-color: deepskyblue;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.resumeDownload:hover {
+    color: deepskyblue;
+    background-color: #fff;
+}
+
 .image_content{
     background-image: url(images/myimage.jpg);
     background-position: 50%;
@@ -117,7 +140,6 @@ header ul a:hover{
     border: 3px solid #2d2e32;
     background-repeat: no-repeat;
     border-radius: 50% 60% 70% 50%;
-    /* -webkit-animation: morph 8s ease-in-out infinite; */
     animation: imageanime 12s ease-in-out infinite;
     transition: all 1s ease-in-out;
     position: relative;
@@ -155,10 +177,9 @@ header ul a:hover{
 }
 
 .skills_content ul li img{
-    height: 6rem;
+    height: 5rem;
     transition: all .3s ease-in-out;
-    border-radius: 20%;
-    width: 6rem;
+    border-radius: 25%;
 }
 
 #html_logo{
@@ -179,6 +200,84 @@ header ul a:hover{
 
 #js_logo:hover{
     transform: translateY(-1rem);
+}
+
+/* about container */
+
+
+.about-container{
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    position: relative;
+    width: 100%;
+    padding: 15rem 0;
+}
+
+.about_content{
+     align-items: center;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 3rem;
+
+}
+
+.about_image{
+    position: relative;
+}
+
+.smiley_image{
+    bottom: 35px;
+    position: absolute;
+    right: 98px;
+    width: 8rem!important;
+    z-index: 2;
+}
+
+.rotate_image{
+    background-color: #fff;
+    border-radius: 50%;
+    bottom: -33px;
+    height: 19rem;
+    position: absolute;
+    right: 33px;
+    width: 19rem;
+    animation: rotate 9s linear infinite;
+}
+
+.about_content_img1{
+    border-radius: 1.7rem;
+    height: 35rem;
+    width: 41rem;
+}
+
+.aboutme_text{
+    padding-right: 1.5rem;
+}
+
+.aboutme_text h4{
+    color: #147efb;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase
+}
+
+.aboutme_text h3{
+    color: #2d2e32;
+    font-family: Poppins,sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+.aboutme_text p{
+    color: #767676;
+    font-family: Mulish,sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.5;
 }
 
 
@@ -206,5 +305,11 @@ header ul a:hover{
     }
     100%{
         border-radius: 50% 60% 70% 50%;
+    }
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(1turn);
     }
 }
