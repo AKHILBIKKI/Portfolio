@@ -324,6 +324,14 @@ header ul a:hover {
         font-size: 100%;
     }
 
+    header{
+        font-size: 3rem;
+    }
+
+    header ul{
+        visibility: hidden;
+    }
+
     .home-container {
         height: auto;
         padding: 11rem 0;
@@ -367,4 +375,22 @@ header ul a:hover {
         display: flex;
         flex-wrap: wrap;
     }
+
+    .about-container{
+        height: fit-content;
+        padding: 5rem 0;
+    }
+
+    .about_image{
+        width: 95%;
+    }
+
+    .aboutme_text{
+        padding: 3rem 0;
+    }
+
+    .aboutme_text h3{
+        padding: 1rem 0;
+    }
+
 }
