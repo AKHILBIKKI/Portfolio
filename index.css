@@ -276,9 +276,224 @@ header ul a:hover {
     line-height: 1.5;
 }
 
+/* 
+    Projects style starts here
+*/
+
+.projects-container {
+    padding: 10rem 0;
+}
+
+.project-content p {
+    color: #147efb;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.project-content h3 {
+    color: #2d2e32;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.developer_logo {
+    color: #b58715;
+}
+
+.projects_list {
+    grid-gap: 5rem;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: auto;
+    width: 100%
+}
+
+.project_item1 {
+    background-color: #fff;
+    border-radius: 1.7rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    display: flex;
+    padding: 2rem;
+    flex-direction: row;
+    gap: 8rem;
+    height: 40rem;
+    padding: 2rem;
+}
+
+.project2 {
+    flex-direction: row-reverse !important;
+}
+
+.project_link {
+    background-color: hsla(0, 0%, 46%, .2);
+    border-radius: 1.7rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    height: auto;
+    overflow: hidden;
+    width: 53rem;
+}
+
+.project_link a img {
+    height: auto;
+    width: 100%;
+    /* animation: updown 45s ease-in-out infinite; */
+    transition: transform 10s ease-in-out 0s;
+    transform: translateY(0%);
+}
+
+.project_link a img:hover {
+    transform: translateY(-75%);
+}
+
+#cal_image {
+    height: 100%;
+}
 
 
-/* animation code starts here */
+.project_desc {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    width: 30rem;
+}
+
+.project_desc h3 {
+    align-items: center;
+    color: #2d2e32;
+    display: flex;
+    font-size: 1.7rem;
+    gap: .2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.project_desc span {
+    color: hsla(0, 5%, 8%, .773);
+    font-size: 1.4rem;
+    margin-left: .2rem;
+}
+
+.project_desc p {
+    color: #767676;
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: none;
+}
+
+.links {
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    display: flex;
+}
+
+.links a {
+    color: #2d2e32;
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap:0.5rem;
+}
+
+/* 
+Contact starts here
+*/
+
+.contact-container{
+    background-color: #fff;
+    padding: 3rem 0;
+}
+
+.contact_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_title p{
+    color: #147efb;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.contact_icon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rem;
+    margin-top: 6rem;
+}
+
+.contact_icon_box{
+    align-items: center;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.contact_info{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.contact_info h3{
+    color: #2d2e32;
+    font-size: 1.7rem;
+}
+
+.contact_info p{
+    color: #767676;
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+.contact_icon_box span{
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    color: #147efb;
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    width: 5rem;
+}
+
+.contact_info a{
+    color: #767676;
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+.contact_info a:hover{
+    color: #2299f8;
+}
+
+
+.footertext h3{
+    color: rgba(35, 27, 27, 0.5);
+    font-size: 2rem;
+    padding: 4rem 0;
+}
+
+
+
+/* 
+animation code starts here
+ */
 
 @keyframes imageanime {
     0% {
@@ -316,6 +531,21 @@ header ul a:hover {
     }
 }
 
+@keyframes updown {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(-50%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
 /* media width 1000px */
 
 @media (max-width: 1000px) {
@@ -324,11 +554,11 @@ header ul a:hover {
         font-size: 100%;
     }
 
-    header{
+    header {
         font-size: 3rem;
     }
 
-    header ul{
+    header ul {
         visibility: hidden;
     }
 
@@ -376,21 +606,127 @@ header ul a:hover {
         flex-wrap: wrap;
     }
 
-    .about-container{
+    .about-container {
         height: fit-content;
         padding: 5rem 0;
     }
 
-    .about_image{
+    .about_image {
         width: 95%;
     }
 
-    .aboutme_text{
+    .aboutme_text {
         padding: 3rem 0;
+        text-align: center;
     }
 
-    .aboutme_text h3{
+    .aboutme_text h3 {
         padding: 1rem 0;
+    }
+
+    .project_item1 {
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+        padding: 0;
+        padding-top: 2rem;
+    }
+
+    .projects-container {
+        padding: 2rem 0;
+    }
+
+    .project-content {
+        text-align: center;
+    }
+
+    .project-content p {
+        margin-bottom: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .project_link {
+        width: 45rem;
+        height: 40rem;
+    }
+
+    .project-content h3 {
+        font-size: 3.5rem;
+    }
+
+    .developer_logo{
+        visibility: hidden;
+    }
+
+    .project_desc h3{
+        font-size: 3rem;
+        line-height: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .project_desc h3 span{
+        font-size: 2.2rem;
+    }
+
+    .project_desc{
+        width: 80%;
+    }
+
+    #todoImg{
+        height: 100%;
+    }
+
+    .links{
+        margin-bottom: 3rem;
+    }
+
+    .links a{
+        font-size: 3rem;
+    }
+
+    .link-logo{
+        font-size: 2rem;
+    }
+
+    .contact_content{
+        text-align: center;
+    }
+
+    .contact_title p{
+        font-size: 3rem;
+    }
+
+    .contact_icon{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact_icon_box span{
+        height: 8rem;
+        width: 8rem;
+        font-size: 4rem;
+    }
+
+    .contact_icon_box{
+        flex-direction: column;
+    }
+
+    .contact_info h3{
+        font-size: 2.5rem;
+    }
+
+    .contact_info p{
+        font-size: 2.2rem;
+    }
+
+    .contact_info a{
+        font-size: 2.2rem;
+    }
+
+    .footertext h3{
+        font-size: 2rem;
     }
 
 }
