@@ -51,6 +51,16 @@ header ul a:hover {
     color: rgb(81, 199, 199);
 }
 
+header span{
+    visibility: hidden;
+    position: fixed;
+    font-size: 9rem;
+}
+
+/* 
+Main starts here
+*/
+
 .home-container {
     background-color: #fff;
     display: flex;
@@ -727,6 +737,18 @@ animation code starts here
 
     .footertext h3{
         font-size: 2rem;
+    }
+
+    header div{
+        position: fixed;
+        top:1.5rem;
+        right: 7rem;
+    }
+
+    header div span{
+        visibility: visible;
+        text-size-adjust: 400%;
+        cursor: pointer;
     }
 
 }
